@@ -1,0 +1,244 @@
+<!-- http://k-pms.kaist.ac.kr/CPopupRequest -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+	<html oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+<head>
+<title>장기미접속 사유 공지 안내</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="/css/simple.css">
+
+<script language="javascript">
+	$(document).ready(function() {
+		open_chatroom();
+	});
+	function location_href() {
+		var uri = "";
+		var host = "example.org";
+		if (uri.substring(0, 1) != "/") {
+			uri = "/" + uri;
+		}
+		location.href = "http://" + host;
+	}
+	function winclose() {
+		window.open("about:blank", "_self").close();
+	}
+	function onlangSubmit(bLangType) {
+		form2.action = "CPopupRequest";
+		form2.bLangType.value = bLangType;
+		form2.submit();
+	}
+	function open_chatroom() {
+		var windowWidth = window.outerWidth;
+		if (windowWidth >= 800) {
+			document.getElementById("table1").style.width = "80%";
+		}
+		if (windowWidth >= 1024) {
+			document.getElementById("table1").style.width = "63%";
+		}
+		if (windowWidth >= 1280) {
+			document.getElementById("table1").style.width = "51%";
+		}
+		if (windowWidth >= 1360) {
+			document.getElementById("table1").style.width = "49%";
+		}
+		if (windowWidth >= 1440) {
+			document.getElementById("table1").style.width = "46%";
+		}
+		if (windowWidth >= 1600) {
+			document.getElementById("table1").style.width = "42%";
+		}
+		if (windowWidth >= 1680) {
+			document.getElementById("table1").style.width = "39%";
+			;
+		}
+		if (windowWidth >= 1920) {
+			document.getElementById("table1").style.width = "35%";
+		}
+	}
+</script>
+</head>
+<body>
+<form name="form1"  action="CblockTempUse.do" method="post" >
+<input type="hidden" name="id" value="" />
+<input type="hidden" name="dwIp1" value="2130706433" />
+<input type="hidden" name="dwIp2" value="2130706433" />
+<input type="hidden" name="host" value="example.org" />
+</form>
+<form name="form2"  action="CPopupRequest" method="get" >
+<input type="hidden" name="id" value="" />
+<input type="hidden" name="dwIp1" value="2130706433" />
+<input type="hidden" name="dwIp2" value="2130706433" />
+<input type="hidden" name="host" value="example.org" />
+<input type="hidden" name="blockCode" value="8" />
+<input type="hidden" name="kind2" value="0" />
+<input type="hidden" name="bLangType" value="0" />
+</form>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="center" colspan="3">
+
+
+							<img src='/img/KAIST_logo2.jpg' border=0>
+
+					</td>
+				</tr>
+				<tr>
+					<td align="right" colspan="3" style="padding: 0px 30px 0px 0px;">
+
+						<a href="javascript:onlangSubmit(0);"><img src="../images/block_skin/korean_kor.png" border="0" width="52" height="25"></a>
+						<a href="javascript:onlangSubmit(1);"><img src="../images/block_skin/english_kor.png" border="0" width="52" height="25"></a>
+
+
+					</td>
+
+				</tr>
+				<tr height="40">
+				</tr>
+			</table>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="3" align="center">
+						<div>
+
+							<img src='/images/block_skin/blockInactive.png' border=0>
+
+
+						</div>
+					</td>
+				</tr>
+				<tr height="40">
+				</tr>
+				<tr>
+					<!--
+
+					<td class="line" colspan="3" align="center"   height="1"></td>
+
+
+					-->
+				</tr>
+				<tr>
+					<td colspan="3" align="center" height="20"></td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center" height="20">
+
+							<tr>
+								<td colspan="3" align="center">
+									<p class="advice-p">
+
+										<p class="advice-p">한국과학기술원에서 제공하는 <span class="red">윈도우 자동패치 서비스</span>이용 안내입니다.<br>	에이전트 설치가 완료되면 1~2분 후 이용 가능합니다. <br><br>
+
+
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" align="center" height="20"></td>
+							</tr>
+							<tr>
+								<td colspan="3" align="center">
+									<a href="/agent/PE-Agent-2.1-005-10703.exe">
+										<img src="../images/block_skin/button-1.png" id="button1" border="0" width="180" height="33" onmouseover="this.src='../images/block_skin/button-1_1.png'" onmouseout="this.src='../images/block_skin/button-1.png'">
+
+									</a>
+
+									&nbsp;&nbsp;&nbsp;
+									<a href="javascript:form1.submit();" class="confirm">
+											<img src="../images/block_skin/button-2-1.png" border="0" width="180" height="33" onmouseover="this.src='../images/block_skin/button-2-2.png'" onmouseout="this.src='../images/block_skin/button-2-1.png'">
+
+									</a>
+
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="/help/agent_kor/index.htm">
+										<img src="../images/block_skin/button-2.png" id="button2" border="0" width="180" height="33" onmouseover="this.src='../images/block_skin/button-2_1.png'" onmouseout="this.src='../images/block_skin/button-2.png'">
+
+									</a>
+								</td>
+							</tr>
+
+
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="80" colspan="3"></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<table class="info" id="table1" border="0" cellpadding="0" cellspacing="0" align="center">
+							<tr>
+								<td class="col1" height="37" width="15%">
+									<table width="100%" border="0" cellpadding="0" cellspacing="0">
+										<td align="right">
+											<img src="../images/block_skin/qu.png" width="20" height="20">
+										</td>
+										<td width="50" valign="middle">
+											<A class="advice-A">문의처</A>
+										</td>
+									</table>
+								</td>
+								<td class="col2" width="85%" height="37" valign="middle" align="left">
+									<A class="advice-A"> PMS담당자 </A>
+								</td>
+							</tr>
+							<tr>
+								<td class="col3" height="37" width="15%">
+									<table width="100%" border="0" cellpadding="0" cellspacing="0">
+										<td align="right">
+											<img src="../images/block_skin/ex.png" width="20" height="20">
+										</td>
+										<td width="50" valign="middle">
+											<A class="advice-A">내용</A>
+										</td>
+									</table>
+								</td>
+								<td class="col4" width="85%" height="37" valign="middle" align="left">
+									<A class="advice-A">귀하의 단말은 장시간 동안 KAIST PMS 서버와 통신하지 않았습니다.
+<br/>에이전트를 설치 후 인터넷을 사용해 주시기 바랍니다.
+<br/>
+<br/>O 임시 사용 : 버튼 클릭시, 7일간 인터넷 사용 후 agent 설치 안내가 뜸.
+<br/>
+<br/>O 예외처리 대상
+<br/>  - MAC/Linux 기반의 VM 윈도우 사용자
+<br/>
+<br/>O 유의사항
+<br/>  - 윈도우 정기 업데이트 주기 : 매월 둘째주 화, 수요일
+<br/>  - 윈도우 비정기 업데이트 : 윈도우 자체 상시 업데이트/ 내 PC보안점검 실행 전
+<br/>  - Agent가 설치 된 후, 미패치된 윈도우 보안 업데이트가 진행되므로 자신의 PC
+<br/>상태에 따라 보안업데이트가 완료될때까지 기다려주시기 바랍니다.(보통 2~5분)
+<br/>  - 비정상적인 경로로 agent삭제시, 시스템에 이상이 발생 할 수 있으니 반드시 관리자에게 예외처리 신청
+<br/>
+<br/>O 문의 : it-security@kaist.ac.kr T.8148
+<br/></A>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="20" colspan="3"></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="3">
+						<a href="javascript:location_href();" class="confirm">
+							<img src="../images/block_skin/button-3.png" onmouseover="this.src='../images/block_skin/button-3_1.png'" onmouseout="this.src='../images/block_skin/button-3.png'" border="0" width="110" height="34">
+
+						</a>
+				</tr>
+			</table>
+		</table>
+
+
+</body>
+	</html>
