@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "short_name": "kpac",
+  "name": "k-pms-autoclicker",
+  "description": "Auto clicker for bypass k-pms",
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "http://k-pms.kaist.ac.kr/CPopupRequest"
+  ],
+  "content_scripts" : [{
+    "matches": [
+      "http://k-pms.kaist.ac.kr/CPopupRequest"
+    ],
+    "js" : ["content.js"],
+    "run_at" : "document_start",
+    "all_frames": true
+  }]
+}
