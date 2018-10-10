@@ -9,12 +9,10 @@
     "webNavigation",
     "http://k-pms.kaist.ac.kr/CPopupRequest"
   ],
-  "content_scripts" : [{
-    "matches": [
-      "http://k-pms.kaist.ac.kr/CPopupRequest"
-    ],
-    "js" : ["content.js"],
-    "run_at" : "document_start",
-    "all_frames": true
-  }]
+  "background" : {
+    "presistent" : true,
+    "scripts":[
+      "content.js"
+    ]
+  }
 }
